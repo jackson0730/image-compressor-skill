@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #007AFF;
+    --background-color: #F5F5F7;
+    --border-radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: #1D1D1F;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #86868B;
+}
+
+.upload-area {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 3rem;
+    text-align: center;
+    border: 2px dashed #DEDEDE;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    border-color: var(--primary-color);
+}
+
+.upload-hint {
+    color: #86868B;
+}
+
+.upload-hint img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
+
+.preview-container {
+    margin-top: 2rem;
+}
+
+.image-preview {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.preview-box {
+    flex: 1;
+    background: white;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.preview-box h3 {
+    margin-bottom: 1rem;
+}
+
+.preview-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.file-info {
+    margin-top: 1rem;
+    color: #86868B;
+}
+
+.controls {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.quality-control {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+input[type="range"] {
+    flex: 1;
+}
+
+.download-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #0066CC;
+} 
